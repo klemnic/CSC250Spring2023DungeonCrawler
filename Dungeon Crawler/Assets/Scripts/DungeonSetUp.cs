@@ -9,15 +9,50 @@ public class DungeonSetUp : MonoBehaviour
     public GameObject eastExit;
     public GameObject westExit;
 
-    public bool northOn;
-    public bool southOn;
-    public bool eastOn;
-    public bool westOn;
+    public bool northOn = false;
+    public bool southOn = true;
+    public bool eastOn = true;
+    public bool westOn = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        this.northExit.SetActive(false);
+        //hw answer should be in here!
+        if (northOn = true)
+        {
+            northExit.SetActive(true);
+        }
+        else
+        {
+            northExit.SetActive(false);
+        }
+
+        if (southOn = true)
+        {
+            southExit.SetActive(true);
+        }
+        else
+        {
+            southExit.SetActive(false);
+        }
+
+        if (eastOn = true)
+        {
+            eastExit.SetActive(true);
+        }
+        else
+        {
+            eastExit.SetActive(false);
+        }
+
+        if (westOn = true)
+        {
+            westExit.SetActive(true);
+        }
+        else
+        {
+            westExit.SetActive(false);
+        }
     }
 
     // Update is called once per frame
