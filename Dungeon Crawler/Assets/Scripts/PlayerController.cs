@@ -38,13 +38,13 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.DownArrow) && this.isMoving == false)
         {
-            this.rb.AddForce(this.southExit.transform.position * movementSpeed);
+            this.rb.AddForce(this.westExit.transform.position * movementSpeed);
             this.isMoving = true;
 
         }
         if (Input.GetKeyDown(KeyCode.LeftArrow) && this.isMoving == false)
         {
-            this.rb.AddForce(this.westExit.transform.position * movementSpeed);
+            this.rb.AddForce(this.southExit.transform.position * movementSpeed);
             this.isMoving = true;
 
         }
